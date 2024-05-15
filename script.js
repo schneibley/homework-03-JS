@@ -11,10 +11,14 @@ const collectEmployees = function() {
 
     if (firstName && lastName && salary) {
       employees.push({firstName, lastName, salary });
-    } else{alert("Invalid input.  Please enter valid information.")};
+    } else {
+      alert("Invalid input.  Please enter valid information.");
     continue;
   }
-  // TODO: Get user input to create and return an array of employee objects
+  const choice = prompt("Do you want to add another employee? (yes/no");
+  addMore = choice === "yes";
+}
+return employees;
 }
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
@@ -25,6 +29,7 @@ const displayAverageSalary = function(employeesArray) {
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
 }
+
 
 /*
   ====================
